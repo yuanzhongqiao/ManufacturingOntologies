@@ -39,9 +39,9 @@
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该解决方案利用 IEC 62541 开放平台通信统一架构 (OPC UA) 来处理所有运营技术 (OT) 数据。</font></font><a href="https://opcfoundation.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述了该标准</font><font style="vertical-align: inherit;">。</font></font></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参考解决方案架构</font></font></h2><a id="user-content-reference-solution-architecture" class="anchor" aria-label="永久链接：参考解决方案架构" href="#reference-solution-architecture"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库包含一个参考解决方案，利用上述本体并在 Microsoft Azure 上实施。通过在 UA Cloud Twin 应用程序中实现开放接口 IDigitalTwin，可以轻松添加其他实现。</font></font></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https::/github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/architecturesimple.png"><img src="https::/github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/architecturesimple.png" alt="建筑学" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https:/github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/architecturesimple.png"><img src="https:/github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/architecturesimple.png" alt="建筑学" width="900" style="max-width: 100%;"></a></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">详细架构：</font></font></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https::/github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/architecture.png"><img src="https::/github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/architecture.png" alt="建筑学" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https:/github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/architecture.png"><img src="https:/github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/architecture.png" alt="建筑学" width="900" style="max-width: 100%;"></a></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是该解决方案涉及的组件：</font></font></p>
 <table>
 <thead>
@@ -168,14 +168,7 @@
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，通过在 ADX 群集上运行以下查询来配置 UA 云库的 Azure 数据资源管理器标注策略（确保您是 ADX 群集管理员，可在 Azure 门户的 ADX 选项卡中的“权限”下进行配置）：</font></font></p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>    .alter cluster policy callout @'[{"CalloutType": "webapi","CalloutUriRegex": "uacloudlibrary.opcfoundation.org","CanCall": true}]'
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="    .alter cluster policy callout @'[{&quot;CalloutType&quot;: &quot;webapi&quot;,&quot;CalloutUriRegex&quot;: &quot;uacloudlibrary.opcfoundation.org&quot;,&quot;CanCall&quot;: true}]'" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后，只需从 Azure 门户运行以下 Azure 数据资源管理器查询：</font></font></p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>    let uri='https://uacloudlibrary.opcfoundation.org/infomodel/download/&lt;insert information model identifier from the UA Cloud Library here&gt;';
@@ -189,23 +182,7 @@
     | project-away UAVariable
     | take 10000
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="    let uri='https://uacloudlibrary.opcfoundation.org/infomodel/download/<insert information model identifier from the UA Cloud Library here>';
-    let headers=dynamic({'accept':'text/plain'});
-    let options=dynamic({'Authorization':'Basic <insert your cloud library credentials hash here>'});
-    evaluate http_request(uri, headers, options)
-    | project title = tostring(ResponseBody.['title']), contributor = tostring(ResponseBody.contributor.name), nodeset = parse_xml(tostring(ResponseBody.nodeset.nodesetXml))
-    | mv-expand UAVariable=nodeset.UANodeSet.UAVariable
-    | project-away nodeset
-    | extend NodeId = UAVariable.['@NodeId'], DisplayName = tostring(UAVariable.DisplayName.['#text']), BrowseName = tostring(UAVariable.['@BrowseName']), DataType = tostring(UAVariable.['@DataType'])
-    | project-away UAVariable
-    | take 10000" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您需要在上面的查询中提供两件事：</font></font></p>
 <ol dir="auto">
@@ -238,40 +215,10 @@ let edges = nodes;
 edges
     | make-graph source --&gt; target with nodes on source
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="let uri='https://uacloudlibrary.opcfoundation.org/infomodel/download/1627266626';
-let headers=dynamic({'accept':'text/plain'});
-let options=dynamic({'Authorization':'Basic <insert your cloud library credentials hash here>'});
-let variables = evaluate http_request(uri, headers, options)
-    | project title = tostring(ResponseBody.['title']), contributor = tostring(ResponseBody.contributor.name), nodeset = parse_xml(tostring(ResponseBody.nodeset.nodesetXml))
-    | mv-expand UAVariable = nodeset.UANodeSet.UAVariable
-    | extend NodeId = UAVariable.['@NodeId'], ParentNodeId = UAVariable.['@ParentNodeId'], DisplayName = tostring(UAVariable['DisplayName']), DataType = tostring(UAVariable.['@DataType']), References = tostring(UAVariable.['References'])
-    | where References !contains &quot;HasModellingRule&quot;
-    | where DisplayName != &quot;InputArguments&quot;
-    | project-away nodeset, UAVariable, References;
-let objects = evaluate http_request(uri, headers, options)
-    | project title = tostring(ResponseBody.['title']), contributor = tostring(ResponseBody.contributor.name), nodeset = parse_xml(tostring(ResponseBody.nodeset.nodesetXml))
-    | mv-expand UAObject = nodeset.UANodeSet.UAObject
-    | extend NodeId = UAObject.['@NodeId'], ParentNodeId = UAObject.['@ParentNodeId'], DisplayName = tostring(UAObject['DisplayName']), References = tostring(UAObject.['References'])
-    | where References !contains &quot;HasModellingRule&quot;
-    | project-away nodeset, UAObject, References;
-let nodes = variables
-    | project source = tostring(NodeId), target = tostring(ParentNodeId), name = tostring(DisplayName)
-    | join kind=fullouter (objects
-        | project source = tostring(NodeId), target = tostring(ParentNodeId), name = tostring(DisplayName)) on source
-        | project source = coalesce(source, source1), target = coalesce(target, target1), name = coalesce(name, name1);
-let edges = nodes;
-edges
-    | make-graph source --> target with nodes on source" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+ 
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了获得最佳结果，请将</font><font style="vertical-align: inherit;">选项更改</font></font><code>Layout</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font></font><code>Grouped</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font><font style="vertical-align: inherit;">。</font></font><code>Lables</code><font style="vertical-align: inherit;"></font><code>name</code><font style="vertical-align: inherit;"></font></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/stationgraph.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/stationgraph.png" alt="车站图" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/stationgraph.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/stationgraph.png" alt="车站图" width="900" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生产线模拟</font></font></h2><a id="user-content-production-line-simulation" class="anchor" aria-label="永久链接：生产线模拟" href="#production-line-simulation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该解决方案利用由多个工作站组成的生产线模拟、OPC UA 信息模型以及简单的制造执行系统 &ZeroWidthSpace;&ZeroWidthSpace;(MES)。工作站和 MES 均采用集装箱化，易于部署。</font></font></p>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认模拟配置</font></font></h3><a id="user-content-default-simulation-configuration" class="anchor" aria-label="永久链接：默认模拟配置" href="#default-simulation-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
@@ -353,14 +300,7 @@ edges
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署完成后，使用 RDP（远程桌面）连接连接到已部署的 Windows VM。可以在</font><font style="vertical-align: inherit;">VM 的</font></font><a href="https://portal.azure.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Azure 门户页面的</font></font></a><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“连接”</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选项下下载 RDP 文件。使用您在部署期间提供的凭据登录，打开</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理员 Powershell 窗口</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，导航到该</font></font><code>C:\ManufacturingOntologies-main\Deployment</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录并运行</font></font></p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>New-AksEdgeDeployment -JsonConfigFilePath .\aksedge-config.json
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="New-AksEdgeDeployment -JsonConfigFilePath .\aksedge-config.json" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+   
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命令完成后，Azure Kubernetes Services Edge Essentials 安装完成，您可以运行生产线模拟。</font></font></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：要随时从所有 Kubernetes 工作负载和服务获取日志，只需</font></font><code>Get-AksEdgeLogs</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理员 Powershell 窗口</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行即可。</font></font></p>
@@ -370,14 +310,7 @@ edges
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">句法：</font></font></p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>StartSimulation &lt;EventHubsCS&gt; &lt;StorageAccountCS&gt; &lt;AzureSubscriptionID&gt; &lt;AzureTenantID&gt;
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="StartSimulation <EventHubsCS> <StorageAccountCS> <AzureSubscriptionID> <AzureTenantID>" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数：</font></font></p>
 <table>
@@ -483,7 +416,7 @@ edges
 </ol>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Azure 数据资源管理器中进行状态监控、计算 OEE、检测异常并进行预测</font></font></h2><a id="user-content-condition-monitoring-calculating-oee-detecting-anomalies-and-making-predictions-in-azure-data-explorer" class="anchor" aria-label="永久链接：在 Azure 数据资源管理器中进行状态监控、计算 OEE、检测异常并进行预测" href="#condition-monitoring-calculating-oee-detecting-anomalies-and-making-predictions-in-azure-data-explorer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以访问</font></font><a href="https://learn.microsoft.com/en-us/azure/synapse-analytics/data-explorer/data-explorer-overview" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Azure 数据资源管理器文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，了解如何创建用于状态监控、产量或维护预测或异常检测的无代码仪表板。我们在该文件夹中提供了一个示例仪表板，供您按照</font><a href="https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards#to-create-new-dashboard-from-a-file" rel="nofollow"><font style="vertical-align: inherit;">此处</font></a></font><code>./Tools/ADXQueries</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述的步骤部署到 ADX 仪表板</font><font style="vertical-align: inherit;">。导入后，您需要通过按照</font><font style="vertical-align: inherit;">仪表板右上角的</font><font style="vertical-align: inherit;">格式指定 ADX 服务器集群实例的 HTTPS 端点来更新仪表板的数据源。</font></font><a href="https://learn.microsoft.com/en-us/azure/data-explorer/azure-data-explorer-dashboards#to-create-new-dashboard-from-a-file" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><code>https://ADXInstanceName.AzureRegion.kusto.windows.net/</code><font style="vertical-align: inherit;"></font></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/dashboard.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/dashboard.png" alt="仪表板" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/dashboard.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/dashboard.png" alt="仪表板" width="900" style="max-width: 100%;"></a></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：如果您想要显示特定班次的 OEE，请</font></font><code>Custom Time Range</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>Time Range</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ADX 仪表板左上角的下拉列表中进行选择，然后输入您感兴趣的班次从开始到结束的日期和时间。</font></font></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Kusto Explorer 中渲染内置统一命名空间 (UNS) 和 ISA-95 模型图</font></font></h2><a id="user-content-rendering-the-built-in-unified-namespace-uns-and-isa-95-model-graph-in-kusto-explorer" class="anchor" aria-label="永久链接：在 Kusto Explorer 中渲染内置统一命名空间 (UNS) 和 ISA-95 模型图" href="#rendering-the-built-in-unified-namespace-uns-and-isa-95-model-graph-in-kusto-explorer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此参考解决方案基于发送到云中时间序列数据库（Azure 数据资源管理器）的 OPC UA 元数据来实现统一名称空间 (UNS)。此 OPC UA 元数据还包括 ISA-95 资产层次结构。生成的图表可以在 Kusto Explorer 工具中轻松可视化，该工具可</font></font><a href="https://learn.microsoft.com/en-us/azure/data-explorer/kusto/tools/kusto-explorer" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载。</font></font></p>
@@ -502,26 +435,7 @@ edges
 let nodes = opcua_metadata_lkv;
 edges | make-graph source --&gt; target with nodes on DisplayName
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="let edges = opcua_metadata_lkv
-| project source = DisplayName, target = Workcell
-| join kind=fullouter (opcua_metadata_lkv
-    | project source = Workcell, target = Line) on source
-    | join kind=fullouter (opcua_metadata_lkv
-        | project source = Line, target = Area) on source
-        | join kind=fullouter (opcua_metadata_lkv
-            | project source = Area, target = Site) on source
-            | join kind=fullouter (opcua_metadata_lkv
-                | project source = Site, target = Enterprise) on source
-                | project source = coalesce(source, source1, source2, source3, source4), target = coalesce(target, target1, target2, target3, target4);
-let nodes = opcua_metadata_lkv;
-edges | make-graph source --> target with nodes on DisplayName" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+   
   </div></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了获得最佳结果，请将</font></font><code>Layout</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选项更改为</font></font><code>Grouped</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/isa95graph.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/isa95graph.png" alt="isa95图" width="900" style="max-width: 100%;"></a></p>
@@ -531,25 +445,15 @@ let nodes = DTDL_models | where contenttype == "Component" | extend nodeId = id,
 edges
 | make-graph src --&gt; dst with nodes on nodeId
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="let edges = DTDL_models | where contenttype == &quot;Relationship&quot; | extend src = id, dst = target, typeName = type | project-away type ;
-let nodes = DTDL_models | where contenttype == &quot;Component&quot; | extend nodeId = id, typeName = type | project-away type ;
-edges
-| make-graph src --> dst with nodes on nodeId" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/isa95modelgraph.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/isa95modelgraph.png" alt="isa95模型图" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/isa95modelgraph.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/isa95modelgraph.png" alt="isa95模型图" width="900" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Azure 托管 Grafana 服务</font></font></h2><a id="user-content-using-azure-managed-grafana-service" class="anchor" aria-label="永久链接：使用 Azure 托管 Grafana 服务" href="#using-azure-managed-grafana-service"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以利用 Grafana 在 Azure 上为此参考解决方案创建仪表板。请参阅</font></font><a href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Tools/GrafanaDashboard/configuregrafana.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font><font style="vertical-align: inherit;">。</font></font></p>
 <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/grafana.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/grafana.png" alt="格拉法纳" width="900" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Asset Admin Shell (AAS) 存储库中启用产品碳足迹计算 (PCF)</font></font></h2><a id="user-content-enabling-the-product-carbon-footprint-calculation-pcf-in-the-asset-admin-shell-aas-repository" class="anchor" aria-label="永久链接：在 Asset Admin Shell (AAS) 存储库中启用产品碳足迹计算 (PCF)" href="#enabling-the-product-carbon-footprint-calculation-pcf-in-the-asset-admin-shell-aas-repository"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资产管理外壳 (AAS) 存储库在参考解决方案部署期间自动配置，但对于产品碳足迹 (PCF) 计算，需要提供 WattTime 服务帐户。请参阅</font></font><a href="https://www.watttime.org/api-documentation/#best-practices-for-api-usage" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WattTime API 文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解如何注册帐户。激活您的帐户后，通过 Azure 门户的 YourDeploymentName-AAS-Repo -&gt; 配置 -&gt; 应用程序设置，在 AAS Repo 网站的设置中提供您的用户名和密码。</font></font></p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/aas.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/aas.png" alt="原子吸收光谱法" width="400" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/aas.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/aas.png" alt="原子吸收光谱法" width="400" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将参考解决方案连接到 Microsoft Power BI</font></font></h2><a id="user-content-connecting-the-reference-solution-to-microsoft-power-bi" class="anchor" aria-label="永久链接：将参考解决方案连接到 Microsoft Power BI" href="#connecting-the-reference-solution-to-microsoft-power-bi"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <ol dir="auto">
 <li>
@@ -581,24 +485,7 @@ edges
  | extend NodeValue = todouble(Value)
  | project Timestamp, NodeValue
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" let _startTime = ago(1h);
- let _endTime = now();
- opcua_metadata_lkv
- | where Name contains &quot;assembly&quot;
- | where Name contains &quot;munich&quot;
- | join kind=inner (opcua_telemetry
-     | where Name == &quot;ActualCycleTime&quot;
-     | where Timestamp > _startTime and Timestamp < _endTime
- ) on DataSetWriterID
- | extend NodeValue = todouble(Value)
- | project Timestamp, NodeValue" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 </li>
 <li>
@@ -660,26 +547,7 @@ edges
 
  .create table opcua_metadata (DataSetWriterID: string, Name: string) 
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" .create table opcua_raw(payload: dynamic)
-
- .create table opcua_metadata_raw (payload: dynamic) 
-
- .create table opcua_raw ingestion json mapping &quot;opcua_mapping&quot; @'[{&quot;column&quot;:&quot;payload&quot;,&quot;path&quot;:&quot;$&quot;,&quot;datatype&quot;:&quot;dynamic&quot;}]'
-
- .create table opcua_metadata_raw ingestion json mapping &quot;opcua_metadata_mapping&quot; @'[{&quot;column&quot;:&quot;payload&quot;,&quot;path&quot;:&quot;$&quot;,&quot;datatype&quot;:&quot;dynamic&quot;}]'
-
- .create table opcua_intermediate(DataSetWriterID: string, Timestamp: datetime, Payload: dynamic)
-
- .create table opcua_telemetry (DataSetWriterID: string, Timestamp: datetime, Name: string, Value: dynamic)
-
- .create table opcua_metadata (DataSetWriterID: string, Name: string) " tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+   
   </div></div>
 </li>
 <li>
@@ -708,36 +576,7 @@ edges
      | project DataSetWriterId = tostring(payload.DataSetWriterId), Name = tostring(payload.MetaData.Name)
  }
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" .create-or-alter function OPCUARawExpand() {
-     opcua_raw
-     |mv-expand records = payload.Messages
-     | where records != ''
-     |project 
-       DataSetWriterID = tostring(records[&quot;DataSetWriterId&quot;]),
-       Timestamp = todatetime(records[&quot;Timestamp&quot;]),
-       Payload = todynamic(records[&quot;Payload&quot;])
-  }
-
-  .create-or-alter function OPCUADatasetExpand() {
-     opcua_intermediate
-     | mv-apply Payload on (
-         extend key = tostring(bag_keys(Payload)[0])
-         | extend p = Payload[key]
-         | project Name = key, Value = todynamic(p.Value)
-     )
- }
-
- .create-or-alter function OPCUAMetaDataExpand() {
-     opcua_metadata_raw
-     | project DataSetWriterId = tostring(payload.DataSetWriterId), Name = tostring(payload.MetaData.Name)
- }" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+   
   </div></div>
 </li>
 <li>
@@ -748,18 +587,7 @@ edges
 
  .alter table opcua_metadata policy update @'[{"Source": "opcua_metadata_raw", "Query": "OPCUAMetaDataExpand()", "IsEnabled": "True"}]'
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" .alter table opcua_intermediate policy update @'[{&quot;Source&quot;: &quot;opcua_raw&quot;, &quot;Query&quot;: &quot;OPCUARawExpand()&quot;, &quot;IsEnabled&quot;: &quot;True&quot;}]'
-
- .alter table opcua_telemetry policy update @'[{&quot;Source&quot;: &quot;opcua_intermediate&quot;, &quot;Query&quot;: &quot;OPCUADatasetExpand()&quot;, &quot;IsEnabled&quot;: &quot;True&quot;}]'
-
- .alter table opcua_metadata policy update @'[{&quot;Source&quot;: &quot;opcua_metadata_raw&quot;, &quot;Query&quot;: &quot;OPCUAMetaDataExpand()&quot;, &quot;IsEnabled&quot;: &quot;True&quot;}]'" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 </li>
 <li>
@@ -771,19 +599,7 @@ edges
      | summarize arg_max(iTime, *) by Name, DataSetWriterID
  }
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" .create materialized-view opcua_metadata_lkv on table opcua_metadata
- {
-     opcua_metadata
-     | extend iTime = ingestion_time()
-     | summarize arg_max(iTime, *) by Name, DataSetWriterID
- }" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 </li>
 <li>
@@ -872,26 +688,7 @@ edges
   | sort by Timestamp desc 
   | render linechart 
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="  let _startTime = ago(1h);
-  let _endTime = now();
-  opcua_metadata_lkv
-  | where Name contains &quot;assembly&quot;
-  | where Name contains &quot;munich&quot;
-  | join kind=inner (opcua_telemetry
-      | where Name == &quot;ActualCycleTime&quot;
-      | where Timestamp > _startTime and Timestamp < _endTime
-  ) on DataSetWriterID
-  | extend NodeValue = todouble(Value)
-  | project Timestamp, NodeValue
-  | sort by Timestamp desc 
-  | render linechart " tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+   
   </div></div>
 </li>
 </ol>
@@ -934,7 +731,7 @@ edges
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">盒子里</font></font><code>Description 1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">放了</font></font><code>LOGICAPP</code></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击该选项卡并</font><font style="vertical-align: inherit;">使用您从上面复制的逻辑应用中</font></font><code>Technical Settings</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">填写字段</font></font><code>Host</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（例如 prod-51.northeurope.logic.azure.com）。</font></font><code>HTTP GET URL</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入</font><font style="vertical-align: inherit;">。</font></font><code>Port</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ZeroWidthSpace;</font></font><code>443</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并输入</font><font style="vertical-align: inherit;">开头的</font></font><code>Path Prefix</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其余部分</font></font><code>HTTP GET URL</code><font style="vertical-align: inherit;"></font><code>/workflows/...</code></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/AddgetURL.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/AddgetURL.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/AddgetURL.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/AddgetURL.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="12" dir="auto">
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font></font><code>Login &amp; Security</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选项卡。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向下滚动</font></font><code>Security Options</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  并设置</font></font><code>SSL</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font></font><code>Active</code></li>
@@ -969,7 +766,7 @@ edges
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在该</font></font><code>Sender</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分中：</font></font><code>PORT</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入</font></font><code>SAPS4H</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>Partner No.</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入</font></font><code>S4HCLNT100</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>Part. Type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入</font></font><code>LS</code></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击窗口底部的绿色勾号。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/Testing2.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/Testing2.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/Testing2.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/Testing2.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="9" dir="auto">
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font></font><code>Standard Outbound Processing</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">屏幕顶部的选项卡。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>Outbound Processing of IDoc</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对话框中，单击绿色复选按钮以启动 IDoc 消息处理</font></font></li>
@@ -988,7 +785,7 @@ edges
 <li><font style="vertical-align: inherit;"></font><code>On-premises data gateway</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过之前安装的本地数据网关安装包附带的配置工具</font><font style="vertical-align: inherit;">重新启动数据网关。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在上一步安装数据网关期间选择的同一 Azure 区域中创建本地数据网关 Azure 资源，并在 下选择数据网关的名称</font></font><code>Installation Name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/gateway.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/gateway.png" alt="网关" width="500" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/gateway.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/gateway.png" alt="网关" width="500" style="max-width: 100%;"></a></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：有关配置步骤的更多背景信息可以</font></font><a href="https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-using-sap-connector?tabs=consumption" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问。</font></font></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：如果数据网关或 SAP 连接器遇到错误，您可以按照</font></font><a href="https://learn.microsoft.com/en-us/archive/blogs/david_burgs_blog/enable-sap-nco-library-loggingtracing-for-azure-on-premises-data-gateway-and-the-sap-connector" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下步骤</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用调试跟踪。</font></font></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用真实生产线代替模拟生产线</font></font></h2><a id="user-content-replacing-the-production-line-simulation-with-a-real-production-line" class="anchor" aria-label="永久链接：用真实生产线代替生产线模拟" href="#replacing-the-production-line-simulation-with-a-real-production-line"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
@@ -1001,14 +798,7 @@ edges
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用以下命令运行 UA Cloud Publisher。托管 UA Cloud Publisher 的边缘 PC 需要 Kubernetes 支持和 Internet 访问（通过端口 9093），并且需要能够连接到生产线中启用 OPC UA 的机器：</font></font></p>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code> kubectl apply -f UA-CloudPublisher.yaml
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" kubectl apply -f UA-CloudPublisher.yaml" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+    
   </div></div>
 </li>
 </ol>
