@@ -670,7 +670,7 @@ edges
 </li>
 <li>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击您的工作区，选择</font></font><code>Lineage view</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看您刚刚在 Microsoft Fabric 中设置的 OPC UA 数据的整个流程：</font></font></p>
- <a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/fabricflow.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/fabricflow.png" alt="织物流" width="900" style="max-width: 100%;"></a>
+ <a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/fabricflow.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/fabricflow.png" alt="织物流" width="900" style="max-width: 100%;"></a>
 </li>
 <li>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击我们的 KQL 数据库并选择，</font></font><code>Open KQL Database</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后选择</font></font><code>Check your data</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。删除示例查询并在文本框中输入以下查询：</font></font></p>
@@ -714,19 +714,19 @@ edges
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进入虚拟机桌面后，单击</font></font><code>SAP Logon</code></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font></font><code>Log On</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序左上角的</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/LogOn.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/LogOn.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/LogOn.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/LogOn.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="4" dir="auto">
 <li><font style="vertical-align: inherit;"></font><code>BPINST</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用用户名和</font></font><code>Welcome1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">密码</font><font style="vertical-align: inherit;">登录</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在右上角搜索</font></font><code>SM59</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.这应该会弹出</font></font><code>Configuration of RFC Connections</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">屏幕。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/SM95Search.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/SM95Search.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/SM95Search.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/SM95Search.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="6" dir="auto">
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font><font style="vertical-align: inherit;">应用程序顶部的</font></font><code>Edit</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和。</font></font><code>Create</code><font style="vertical-align: inherit;"></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在字段</font></font><code>LOGICAPP</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中</font><font style="vertical-align: inherit;">输入</font></font><code>Destination</code><font style="vertical-align: inherit;"></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从</font></font><code>Connection Type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉列表中选择</font></font><code>HTTP Connection to external server</code></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击窗口底部的绿色勾号。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/ConnectionLOGICAPP.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/ConnectionLOGICAPP.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/ConnectionLOGICAPP.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/ConnectionLOGICAPP.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="10" dir="auto">
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">盒子里</font></font><code>Description 1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">放了</font></font><code>LOGICAPP</code></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击该选项卡并</font><font style="vertical-align: inherit;">使用您从上面复制的逻辑应用中</font></font><code>Technical Settings</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">填写字段</font></font><code>Host</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（例如 prod-51.northeurope.logic.azure.com）。</font></font><code>HTTP GET URL</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入</font><font style="vertical-align: inherit;">。</font></font><code>Port</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&ZeroWidthSpace;</font></font><code>443</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并输入</font><font style="vertical-align: inherit;">开头的</font></font><code>Path Prefix</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其余部分</font></font><code>HTTP GET URL</code><font style="vertical-align: inherit;"></font><code>/workflows/...</code></li>
@@ -742,18 +742,18 @@ edges
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>RFC destination</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择</font></font><code>LOGICAPP</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">点击</font></font><code>Green Check</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进入</font></font><code>Save</code></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/PortSelectLOGICAPP.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/PortSelectLOGICAPP.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/PortSelectLOGICAPP.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/PortSelectLOGICAPP.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="20" dir="auto">
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过从 SAP 系统的搜索框输入内容，为 SAP 系统中的 Azure 逻辑应用创建合作伙伴配置文件</font></font><code>WE20</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，这将打开屏幕</font></font><code>Partner profiles</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">展开</font></font><code>Partner Profiles</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹并选择</font></font><code>Partner Type LS</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（逻辑系统）文件夹。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击</font></font><code>S4HCLNT100</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">合作伙伴个人资料。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击表格</font></font><code>Create Outbound Parameter</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下方的按钮</font></font><code>Outbound</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/Outbound.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/Outbound.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/Outbound.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/Outbound.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <ol start="24" dir="auto">
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>Partner Profiles: Outbound Parameters</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对话框中，输入</font></font><code>INTERNAL_ORDER</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">for </font></font><code>Message Type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。在</font></font><code>Outbound Options</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选项卡中，输入</font></font><code>LOGICAPP</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">for </font></font><code>Receiver port</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。选择</font></font><code>Pass IDoc Immediately</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单选按钮。对于</font></font><code>Basic type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入</font></font><code>INTERNAL_ORDER01</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.单击</font></font><code>Save</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按钮。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/OutboundParams.png"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/OutboundParams.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/OutboundParams.png"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/OutboundParams.png" alt="工作流程" width="900" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试 SAP 到 Azure 逻辑应用的工作流</font></font></h3><a id="user-content-testing-your-sap-to-azure-logic-app-workflow" class="anchor" aria-label="永久链接：测试 SAP 到 Azure 逻辑应用程序的工作流程" href="#testing-your-sap-to-azure-logic-app-workflow"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要尝试从 SAP 到 Azure 逻辑应用的工作流程，请按照以下步骤操作：</font></font></p>
 <ol dir="auto">
@@ -831,35 +831,7 @@ edges
  ReversiblePubSubEncoding: false,
  AutoLoadPersistedNodes: true
 </code></pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value=" PublisherName: &quot;UACloudPublisher&quot;,
- BrokerUrl: &quot;[myeventhubsnamespace].servicebus.windows.net&quot;,
- BrokerPort: 9093,
- BrokerUsername: &quot;$ConnectionString&quot;,
- BrokerPassword: &quot;[myeventhubsnamespaceprimarykeyconnectionstring]&quot;,
- BrokerMessageTopic: &quot;data&quot;,
- BrokerMetadataTopic: &quot;metadata&quot;,
- SendUAMetadata: true,
- MetadataSendInterval: 43200,
- BrokerCommandTopic: &quot;&quot;,
- BrokerResponseTopic: &quot;&quot;,
- BrokerMessageSize: 262144,
- CreateBrokerSASToken: false,
- UseTLS: false,
- InternalQueueCapacity: 1000,
- DefaultSendIntervalSeconds: 1,
- DiagnosticsLoggingInterval: 30,
- DefaultOpcSamplingInterval: 500,
- DefaultOpcPublishingInterval: 1000,
- UAStackTraceMask: 645,
- ReversiblePubSubEncoding: false,
- AutoLoadPersistedNodes: true" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
+  
   </div></div>
 </li>
 <li>
@@ -878,7 +850,7 @@ edges
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在具有 Kubernetes 支持的 PC 上部署 UA Edge Translator，该 PC 与您的工业资产和 UA Cloud Publisher 位于同一网络中。您可以</font></font><code>Deployment</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过调用 来使用此存储库文件夹</font><font style="vertical-align: inherit;">中的 UA-EdgeTranslator.yaml 文件</font></font><code>kubectl apply -f UA-EdgeTranslator.yaml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
 <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 UA Cloud Publisher 的用户界面使用 Azure OpenAI 服务创建 Web of Things (WoT) 事物描述，并将其发送到 UA Edge Translator。</font></font></li>
 </ol>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/translator.jpeg"><img src="/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/translator.jpeg" alt="翻译者" width="900" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/digitaltwinconsortium/ManufacturingOntologies/blob/main/Docs/translator.jpeg"><img src="https://github.com/digitaltwinconsortium/ManufacturingOntologies/raw/main/Docs/translator.jpeg" alt="翻译者" width="900" style="max-width: 100%;"></a></p>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
 <p dir="auto"><a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow"><img alt="知识共享许可" src="https://camo.githubusercontent.com/ae0ee1333cd0acfb61ddde585b565eab3fd7f21ac4e299f68402ea611f8faf68/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f342e302f38387833312e706e67" data-canonical-src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="max-width: 100%;"></a></p>
 <p dir="auto"><font style="vertical-align: inherit;"></font><a href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本作品根据Creative Commons Attribution 4.0 International License</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获得许可</font><font style="vertical-align: inherit;">。</font></font></p>
